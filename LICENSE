@@ -1,4 +1,24 @@
-                    GNU GENERAL PUBLIC LICENSE
+// src/components/Header.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Header() {
+  return (
+    <header className="bg-primary text-white shadow-md py-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+        <h1 className="text-2xl font-bold">
+          🕌 Masjid Jami' <span className="text-gold">At-Taqwa</span>
+        </h1>
+        <nav className="flex gap-5 mt-3 md:mt-0 text-sm">
+          <Link to="/" className="hover:text-gold transition">Beranda</Link>
+          <Link to="/kegiatan" className="hover:text-gold transition">Kegiatan</Link>
+          <Link to="/donasi" className="hover:text-gold transition">Donasi</Link>
+          <Link to="/tentang" className="hover:text-gold transition">Tentang</Link>
+        </nav>
+      </div>
+    </header>
+  );
+}                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
